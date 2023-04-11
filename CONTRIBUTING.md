@@ -17,7 +17,7 @@ bundle exec rspec
     gem: examplegem
     cve: 2013-0156
     date: 2013-05-01
-    url: https://github.com/rubysec/ruby-advisory-db/issues/123456
+    url: https://github.com/cvelab/cvelist/issues/123456
     title: |
       Ruby on Rails params_parser.rb Action Pack Type Casting Parameter Parsing
       Remote Code Execution
@@ -44,9 +44,10 @@ bundle exec rspec
         - 2013-1234567
         - 2013-1234568
       url:
-        - https://github.com/rubysec/ruby-advisory-db/issues/123457
+        - https://github.com/cvelab/cvelist/issues/123457
 
 ```
+
 ### Schema
 
 * `gem` \[String\] (required): Name of the affected gem.

@@ -48,7 +48,7 @@ module GitHub
         Faraday.new do |conn_builder|
           conn_builder.adapter adapter
           conn_builder.headers = {
-            "User-Agent" => "rubysec/ruby-advisory-db rubysec sync script",
+            "User-Agent" => "cvelab/cvelist rubysec sync script",
             "Content-Type" => "application/json",
             "Authorization" => "token #{github_api_token}"
           }
