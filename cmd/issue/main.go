@@ -28,7 +28,7 @@ import (
 
 var (
 	githubToken = flag.String("ghtoken", os.Getenv("VULN_GITHUB_ACCESS_TOKEN"), "GitHub access token")
-	issueRepo   = flag.String("issue-repo", "github.com/golang/vulndb", "repo to create issues in")
+	issueRepo   = flag.String("issue-repo", "github.com/cvelab/cvelist", "repo to create issues in")
 )
 
 func main() {
@@ -123,7 +123,7 @@ func constructIssue(ctx context.Context, c *issues.Client, ghsaClient *ghsa.Clie
 		ids    []string
 		bodies []string
 	)
-	repo, err := gitrepo.Clone(ctx, "https://github.com/golang/vulndb")
+	repo, err := gitrepo.Clone(ctx, "https://github.com/cvelab/cvelist")
 	if err != nil {
 		return err
 	}
@@ -151,7 +151,7 @@ func constructIssue(ctx context.Context, c *issues.Client, ghsaClient *ghsa.Clie
 	if err != nil {
 		return err
 	}
-	fmt.Printf("created https://github.com/golang/vulndb/issues/%d (%s)\n", issNum, strings.Join(ids, ", "))
+	fmt.Printf("created https://github.com/cvelab/cvelist/issues/%d (%s)\n", issNum, strings.Join(ids, ", "))
 	return nil
 }
 

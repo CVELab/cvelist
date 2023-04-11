@@ -45,7 +45,7 @@ import (
 
 var (
 	localRepoPath = flag.String("local-cve-repo", "", "path to local repo, instead of cloning remote")
-	issueRepo     = flag.String("issue-repo", "github.com/golang/vulndb", "repo to create issues in")
+	issueRepo     = flag.String("issue-repo", "github.com/cvelab/cvelist", "repo to create issues in")
 	githubToken   = flag.String("ghtoken", "", "GitHub access token (default: value of VULN_GITHUB_ACCESS_TOKEN)")
 	skipSymbols   = flag.Bool("skip-symbols", false, "for lint and fix, don't load package for symbols checks")
 	skipGHSA      = flag.Bool("skip-ghsa", false, "for fix, skip adding new GHSAs")
@@ -398,7 +398,7 @@ func createExcluded(ctx context.Context, cfg *createCfg) (err error) {
 			skipped++
 			continue
 		}
-		successfulIssNums = append(successfulIssNums, fmt.Sprintf("golang/vulndb#%d", iss.Number))
+		successfulIssNums = append(successfulIssNums, fmt.Sprintf("cvelab/cvelist#%d", iss.Number))
 		successfulGoIDs = append(successfulGoIDs, report.GetGoIDFromFilename(filename))
 	}
 	fmt.Printf("Skipped %d issues\n", skipped)
@@ -944,7 +944,7 @@ func newCommitMsg(r *report.Report, filepath string) (string, error) {
 	}
 
 	return fmt.Sprintf(
-		"%s: %s %s\n\nAliases: %s\n\n%s golang/vulndb#%d",
+		"%s: %s %s\n\nAliases: %s\n\n%s cvelab/cvelist#%d",
 		folder, fileAction, filename, strings.Join(r.GetAliases(), ", "),
 		issueAction, issueID), nil
 }
@@ -1012,7 +1012,7 @@ func packageLoadingError(pkgs []*packages.Package) error {
 		for _, msg := range msgs {
 			// cgo failure?
 			if strings.Contains(msg, "could not import C (no metadata for C)") {
-				const url = `https://github.com/golang/vulndb/blob/master/doc/triage.md#vulnreport-cgo-failures`
+				const url = `https://github.com/cvelab/cvelist/blob/master/doc/triage.md#vulnreport-cgo-failures`
 				return fmt.Errorf("package %s has a cgo error (install relevant C packages? %s)\nerrors:%s", pkg.PkgPath, url, strings.Join(msgs, "\n"))
 			}
 		}

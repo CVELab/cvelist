@@ -254,7 +254,7 @@ func createIssuesCommand(ctx context.Context) error {
 		return err
 	}
 	client := issues.NewClient(ctx, &issues.Config{Owner: owner, Repo: repoName, Token: cfg.GitHubAccessToken})
-	repo, err := gitrepo.Clone(ctx, "https://github.com/golang/vulndb")
+	repo, err := gitrepo.Clone(ctx, "https://github.com/cvelab/cvelist")
 	if err != nil {
 		return err
 	}

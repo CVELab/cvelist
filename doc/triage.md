@@ -1,7 +1,7 @@
 # Handling Go Vulnerability Reports
 
 This document explains how we handle vulnerability issue triage in the
-[x/vulndb issue tracker](http://github.com/golang/vulndb/issues).
+[x/vulndb issue tracker](http://github.com/cvelab/cvelist/issues).
 
 ## Reports
 
@@ -116,7 +116,6 @@ new report to the database by following these steps:
    `vulnreport fix <GitHub issue number>` before re-mailing to update the OSV
    and perform other useful actions.
 
-
 ### If the report is labeled `excluded: REASON`
 
 1. Start a new branch in your vuldb clone for the commit that the next step
@@ -198,13 +197,15 @@ This section describes frequent issues that come up when triaging vulndb reports
 ### vulnreport cgo failures
 
 When `vulnreport fix` fails with an error message like
+
 ```
 /path/to/package@v1.2.3/foo.go:1:2: could not import C (no metadata for C)
 ````
+
 a frequent cause is the local machine missing `C` library headers causing
 typechecking of cgo packages to fail. The easiest workaround is to use
 a machine with the development headers installed or to install them.
 
 Commonly missing packages include:
-* libgpgme-dev
-* libdevmapper-dev
+- libgpgme-dev
+- libdevmapper-dev

@@ -10,7 +10,7 @@ information about the Go vulnerability management system.
 
 ## Reporting a vulnerability or feedback
 
-[Click here](https://github.com/golang/vulndb/issues/new/choose) to report a
+[Click here](https://github.com/cvelab/cvelist/issues/new/choose) to report a
 public vulnerability in the Go ecosystem, or give feedback about the project.
 
 ## Privacy Policy

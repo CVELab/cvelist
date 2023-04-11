@@ -268,7 +268,7 @@ Cross references:
 - Module a.Module appears in issue #2
 
 
-See [doc/triage.md](https://github.com/golang/vulndb/blob/master/doc/triage.md) for instructions on how to triage this report.
+See [doc/triage.md](https://github.com/cvelab/cvelist/blob/master/doc/triage.md) for instructions on how to triage this report.
 
 ` + "```" + `
 modules:
@@ -319,7 +319,7 @@ Cross references:
 - G1 appears in issue #1  EXCLUDED
 
 
-See [doc/triage.md](https://github.com/golang/vulndb/blob/master/doc/triage.md) for instructions on how to triage this report.
+See [doc/triage.md](https://github.com/cvelab/cvelist/blob/master/doc/triage.md) for instructions on how to triage this report.
 
 ` + "```" + `
 modules:

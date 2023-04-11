@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 Repo for testing reports.GetAllExisting, semi in the shape of
-github.com/golang/vulndb
+github.com/cvelab/cvelist
 
 -- data/reports/GO-9999-0001.yaml --
 modules:

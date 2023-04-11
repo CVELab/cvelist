@@ -7,7 +7,7 @@ It is the work of hundreds of contributors. We appreciate your help!
 ## Reporting a vulnerability
 
 To report a new *public* vulnerability,
-[open an issue](https://github.com/golang/vulndb/issues/new),
+[open an issue](https://github.com/cvelab/cvelist/issues/new),
 send a GitHub PR, or mail a Gerrit CL.
 
 Please read the

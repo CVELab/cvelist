@@ -47,11 +47,11 @@ type Client struct {
 // Config is used to initialize a new Client.
 type Config struct {
 	// Owner is the owner of a GitHub repo. For example, "golang" is the owner
-	// for github.com/golang/vulndb.
+	// for github.com/cvelab/cvelist.
 	Owner string
 
 	// Repo is the name of a GitHub repo. For example, "vulndb" is the repo
-	// name for github.com/golang/vulndb.
+	// name for github.com/cvelab/cvelist.
 	Repo string
 
 	// Token is access token that authorizes and authenticates

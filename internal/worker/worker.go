@@ -541,7 +541,7 @@ type issueTemplateData struct {
 var issueTemplate = template.Must(template.New("issue").Parse(`
 {{- .Intro}}
 
-See [doc/triage.md](https://github.com/golang/vulndb/blob/master/doc/triage.md) for instructions on how to triage this report.
+See [doc/triage.md](https://github.com/cvelab/cvelist/blob/master/doc/triage.md) for instructions on how to triage this report.
 
 {{if (and .Pre .Report) -}}
 {{.Pre}}

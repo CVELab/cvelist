@@ -50,7 +50,7 @@ type CVERecord struct {
 	ReferenceURLs []string
 
 	// IssueReference is a reference to the GitHub issue that was filed.
-	// E.g. golang/vulndb#12345.
+	// E.g. cvelab/cvelist#12345.
 	// Set only after a GitHub issue has been successfully created.
 	IssueReference string
 
@@ -188,7 +188,7 @@ type GHSARecord struct {
 	// TriageStateReason is an explanation of TriageState.
 	TriageStateReason string
 	// IssueReference is a reference to the GitHub issue that was filed.
-	// E.g. golang/vulndb#12345.
+	// E.g. cvelab/cvelist#12345.
 	// Set only after a GitHub issue has been successfully created.
 	IssueReference string
 	// IssueCreatedAt is the time when the issue was created.

@@ -352,7 +352,7 @@ func (s *Server) handleIssues(w http.ResponseWriter, r *http.Request) error {
 		}
 	}
 	log.With("limit", limit).Infof(r.Context(), "creating issues")
-	repo, err := gitrepo.Clone(r.Context(), "https://github.com/golang/vulndb")
+	repo, err := gitrepo.Clone(r.Context(), "https://github.com/cvelab/cvelist")
 	if err != nil {
 		return err
 	}

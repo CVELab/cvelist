@@ -39,7 +39,7 @@ func TestRealClient(t *testing.T) {
 		if *githubRepo == "" {
 			t.Skip("skipping: no -repo flag")
 		}
-		if *githubRepo == "golang/vulndb" {
+		if *githubRepo == "cvelab/cvelist" {
 			t.Skip("Do not use x/vulndb as the test repo. Create a personal test repo instead.")
 		}
 		owner, repo, err := gitrepo.ParseGitHubRepo(*githubRepo)
