@@ -5,7 +5,7 @@ The gsd-database repo is the actual data for identifiers in the Global Security 
 ### Todo
 - [ ] Update README.md
 - [ ] DATA - We have a lot of kernel IDs, we need to explain why this is
-- [ ] DATA - How the data (https://github.com/cloudsecurityalliance/gsd-database) is currently structured needs to be documented (for example we mirror CVE data in a namespace).
+- [ ] DATA - How the data (https://github.com/cvelab/cvelist) is currently structured needs to be documented (for example we mirror CVE data in a namespace).
 - [ ] DATA - The GSD format needs to be documented (see the tools to understand this format, it only exists in code today)
 - [ ] DATA - The OSV format needs to be better documented as well as a plae we can start to capture some of the missing pieces GSD needs.
 - [ ] DATA - We need a json schema file to validate the data (for example we should validate all pull requests before they can be merged)
