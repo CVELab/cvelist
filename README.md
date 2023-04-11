@@ -5,10 +5,10 @@
 [![Project Chat][chat-image]][chat-link]
 
 The RustSec Advisory Database is a repository of security advisories filed
-against Rust crates published via https://crates.io. A human-readable version
-of the advisory database can be found at https://rustsec.org/advisories/.
+against Rust crates published via <https://crates.io>. A human-readable version
+of the advisory database can be found at <https://rustsec.org/advisories/>.
 
-We also [export](https://github.com/rustsec/advisory-db/tree/osv) data to the [OSV](https://github.com/ossf/osv-schema) format.
+We also [export](https://github.com/cvelab/cvelist/tree/osv) data to the [OSV](https://github.com/ossf/osv-schema) format.
 All our data is available on [osv.dev](https://osv.dev/list?ecosystem=crates.io&q=)
 and through their [API](https://osv.dev/#use-the-api).
 
@@ -29,7 +29,7 @@ and reporting (send PRs to add yours):
 To report a new vulnerability, open a pull request using the template below.
 See [CONTRIBUTING.md] for more information.
 
-<a href="https://github.com/RustSec/advisory-db/blob/main/CONTRIBUTING.md">
+<a href="https://github.com/CVELab/cvelist/blob/main/CONTRIBUTING.md">
   <img alt="Report Vulnerability" width="250px" height="60px" src="https://rustsec.org/img/report-vuln-button.svg">
 </a>
 
@@ -131,23 +131,23 @@ The above [TOML] "front matter" is followed by the long description in [Markdown
 
 All content in this repository is placed in the public domain.
 
-[![Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/main/LICENSE.txt)
+[![Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://github.com/CVELab/cvelist/blob/main/LICENSE.txt)
 
 [//]: # (badges)
 
-[build-image]: https://github.com/rustsec/advisory-db/workflows/Validate/badge.svg
-[build-link]: https://github.com/rustsec/advisory-db/actions
+[build-image]: https://github.com/cvelab/cvelist/workflows/Validate/badge.svg
+[build-link]: https://github.com/cvelab/cvelist/actions
 [maintained-image]: https://img.shields.io/maintenance/yes/2023.svg
 [chat-image]: https://img.shields.io/badge/zulip-join_chat-blue.svg
 [chat-link]: https://rust-lang.zulipchat.com/#narrow/stream/146229-wg-secure-code/
 
 [//]: # (general links)
 
-[EXAMPLE_ADVISORY.md]: https://github.com/RustSec/advisory-db/blob/main/EXAMPLE_ADVISORY.md
+[EXAMPLE_ADVISORY.md]: https://github.com/CVELab/cvelist/blob/main/EXAMPLE_ADVISORY.md
 [Markdown]: https://www.markdownguide.org/
 [TOML]: https://github.com/toml-lang/toml
 [cargo-audit]: https://github.com/rustsec/cargo-audit
 [cargo-deny]: https://github.com/EmbarkStudios/cargo-deny
 [trivy]: https://aquasecurity.github.io/trivy/
 [dependabot]: https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates
-[CONTRIBUTING.md]: https://github.com/RustSec/advisory-db/blob/main/CONTRIBUTING.md
+[CONTRIBUTING.md]: https://github.com/CVELab/cvelist/blob/main/CONTRIBUTING.md

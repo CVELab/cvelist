@@ -1,7 +1,7 @@
 # Reporting Vulnerabilities
 
 To add an advisory to the RustSec database, open a [Pull Request] against
-[this](https://github.com/RustSec/advisory-db) repository containing the new advisory:
+[this](https://github.com/CVELab/cvelist) repository containing the new advisory:
 
 ### Required Steps
 
@@ -13,14 +13,14 @@ To add an advisory to the RustSec database, open a [Pull Request] against
 3. Write a human-readable Markdown description in the same file, after the <code>\```</code> marker and a newline. Use [this example advisory][example] as a reference.
 4. Open a [Pull Request]. After being reviewed your advisory will be assigned
    a `RUSTSEC-*` advisory identifier and be published to the database.
-   
+
 ### Optional Steps
 
 Feel free to do either or both of these as you see fit (we recommend you do both):
 
 4. [Yank] the affected versions of the crate.
 5. Request a CVE for your vulnerability. See for details:
-   https://cve.mitre.org/cve/request_id.html and https://cveform.mitre.org .
+   <https://cve.mitre.org/cve/request_id.html> and <https://cveform.mitre.org> .
    Alternatively, you can create a GitHub Security Advisory (GHSA) and let them request
    a CVE for you. In this case, you can add the GHSA ID to the RustSec advisory via the
    `aliases` field.
@@ -55,11 +55,11 @@ When in doubt, please open a PR.
 A:  No, anyone can file an advisory against any crate. The legitimacy of
     vulnerabilities will be determined prior to merging. If a vulnerability
     turns out to be fake it will be removed from the database.
-    
+
 **Q: Can I file an advisory without creating a pull request?**
 
 A: Yes, instead of creating a full advisory yourself you can also
-   [open an issue on the advisory-db repo](https://github.com/RustSec/advisory-db/issues)
+   [open an issue on the advisory-db repo](https://github.com/CVELab/cvelist/issues)
    or email information about the vulnerability to
    [rustsec@googlegroups.com](mailto:rustsec@googlegroups.com).
 
@@ -69,7 +69,7 @@ A: We do not presently handle embargoed vulnerabilities. Please ensure embargoes
    have been lifted and details have been disclosed to the public prior to filing
    them against RustSec.
 
-[Pull Request]: https://github.com/RustSec/advisory-db/pulls
-[TOML advisory template]: https://github.com/RustSec/advisory-db#advisory-format
+[Pull Request]: https://github.com/CVELab/cvelist/pulls
+[TOML advisory template]: https://github.com/CVELab/cvelist#advisory-format
 [Yank]: https://doc.rust-lang.org/cargo/commands/cargo-yank.html
-[example]: https://raw.githubusercontent.com/rustsec/advisory-db/main/EXAMPLE_ADVISORY.md
+[example]: https://raw.githubusercontent.com/cvelab/cvelist/main/EXAMPLE_ADVISORY.md

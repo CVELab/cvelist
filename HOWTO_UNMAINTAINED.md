@@ -67,13 +67,13 @@ discussed in the `url = "..."` field of the advisory.
 
 For more information on adding an advisory to the RustSec DB, see:
 
-<https://github.com/RustSec/advisory-db/blob/main/CONTRIBUTING.md>
+<https://github.com/CVELab/cvelist/blob/main/CONTRIBUTING.md>
 
 ### Questions
 
 Please open a GitHub issue:
 
-<https://github.com/rustsec/advisory-db/issues>
+<https://github.com/cvelab/cvelist/issues>
 
 [//]: # (links)
 
