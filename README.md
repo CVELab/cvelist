@@ -21,12 +21,12 @@ automatically imported in this repository.
 
 Any user changes to vulnerability files in this repository will trigger a
 re-analysis by OSV within a few minutes (
-[example change](https://github.com/google/oss-fuzz-vulns/commit/8546454f8ad92bee001ca3be5b4c236bcc2df3d5),
-[re-analysis](https://github.com/google/oss-fuzz-vulns/commit/5a1e660f6e8ddd3d3db513f976f4987287fc258e)).
+[example change](https://github.com/cvelab/cvelist/commit/8546454f8ad92bee001ca3be5b4c236bcc2df3d5),
+[re-analysis](https://github.com/cvelab/cvelist/commit/5a1e660f6e8ddd3d3db513f976f4987287fc258e)).
 
 OSV will also regularly recompute affected versions and detect cherry picks
 across different branches for each vulnerability
-([example](https://github.com/google/oss-fuzz-vulns/commit/76395230e992d4de9bae19b39d27dbad16ec389d)).
+([example](https://github.com/cvelab/cvelist/commit/76395230e992d4de9bae19b39d27dbad16ec389d)).
 
 OSV also provides an [API](https://osv.dev/docs/) to let users easily query this information.
 
@@ -51,7 +51,7 @@ $ python scripts/import.py <oss-fuzz issue ID>
 ```
 
 Any missing details may be filled in manually and submitted as part of a PR to this repo.
-See [this example](https://github.com/google/oss-fuzz-vulns/commit/8546454f8ad92bee001ca3be5b4c236bcc2df3d5).
+See [this example](https://github.com/cvelab/cvelist/commit/8546454f8ad92bee001ca3be5b4c236bcc2df3d5).
 
 ### The bug was not marked as security by OSS-Fuzz
 
