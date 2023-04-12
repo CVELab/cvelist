@@ -5,7 +5,7 @@ on:
     types: [created, edited, labeled]
 
 jobs:
-  execute-trickest-workflow:
+  execute-cvelab-workflow:
     if: ${{ github.event.label.name == 'On-Demand' }}
     runs-on: ubuntu-latest
     steps:
@@ -17,9 +17,9 @@ jobs:
       run: |
         cat config-template.yaml | sed 's/$CVE/${{ github.event.issue.title }}/g' | sed 's/$ISSUE_ID/${{ github.event.issue.number }}/g' > config.yaml
 
-    - name: Trickest Execute
-      id: trickest
-      uses: trickest/action@main
+    - name: CVELab Execute
+      id: cvelab
+      uses: cvelab/action@main
       env:
         TRICKEST_TOKEN: "${{ secrets.TRICKEST_TOKEN }}"
       with:
