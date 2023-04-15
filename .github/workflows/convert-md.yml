@@ -3,7 +3,7 @@ name: Sync CVEs to GitHub
 on:
   push:
     branches:
-      - main
+      - github
 
 jobs:
   sync_cves:
@@ -20,14 +20,16 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install PyGithub
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
 
       - name: Convert CVEs to Markdown
         run: |
           mkdir -p md
-          python convert.py > md/cves.md
+          for f in cves/*.json; do
+            md_file="md/$(basename "$f" .json).md"
+            python convert.py "$f" > "$md_file"
+          done
 
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v7.0.0
