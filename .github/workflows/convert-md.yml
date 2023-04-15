@@ -3,7 +3,7 @@ name: Sync CVEs to GitHub
 on:
   push:
     branches:
-      - github
+      - github,pypa
 
 jobs:
   sync_cves:
