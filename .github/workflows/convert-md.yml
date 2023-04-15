@@ -26,10 +26,7 @@ jobs:
       - name: Convert CVEs to Markdown
         run: |
           mkdir -p md
-          for f in cves/*.json; do
-            md_file="md/$(basename "$f" .json).md"
-            python convert.py "$f" > "$md_file"
-          done
+          python convert_from_github.py > md/cves.md
 
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v7.0.0
